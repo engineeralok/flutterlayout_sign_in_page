@@ -89,12 +89,19 @@ Widget _buildContent() {
         ),
         SignInButton(
           text: "Go Anonymous",
-          color: const Color.fromARGB(255, 152, 65, 6),
+          color: const Color.fromARGB(255, 152, 65, 65),
           textColor: Colors.white,
           onPressed: () {},
           borderRadius: 8,
-          minimumHieght: 59,
+          minimumHieght: 55,
         ),
+        // CustomElevatedButton(
+        //   child: Image.asset('images/google.svg'),
+        //   onPressed: () {},
+        //   color: Colors.white,
+        //   borderRadius: 20,
+        //   minimumHieght: 20,
+        // )
       ],
     ),
   );
