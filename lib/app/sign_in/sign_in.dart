@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:layouts/app/sign_in/sign_in_button.dart';
-
+import 'package:layouts/app/sign_in/social_sign_in_button.dart';
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);
 
@@ -37,71 +36,42 @@ Widget _buildContent() {
         const SizedBox(
           height: 15.0,
         ),
-        SignInButton(
-          text: "Sign in with google ",
+        SocialSignInButton(
+          text: "Sign in with Facebook",
           textColor: Colors.black,
           onPressed: () {},
           color: Colors.white,
           borderRadius: 8,
-          minimumHieght: 55,
+          assetPath: 'lib/assets/images/facebook.png',
+          height: 50,
         ),
         const SizedBox(
           height: 15.0,
         ),
-        SignInButton(
-          text: "Sign in with Facebook",
-          color: const Color.fromARGB(255, 92, 67, 255),
-          textColor: Colors.white,
-          onPressed: () {},
-          borderRadius: 8,
-          minimumHieght: 55,
-        ),
-        const SizedBox(
-          height: 15.0,
-        ),
-        SignInButton(
+        SocialSignInButton(
           text: "Sign in with Github",
-          color: const Color.fromARGB(255, 22, 21, 28),
-          textColor: Colors.white,
+          textColor: Colors.black,
           onPressed: () {},
+          color: Colors.white,
           borderRadius: 8,
-          minimumHieght: 55,
+          assetPath: 'lib/assets/images/github.png',
+          height: 50,
         ),
         const SizedBox(
           height: 15.0,
         ),
-        SignInButton(
-          text: "Sign in with Email",
-          color: const Color.fromARGB(255, 18, 122, 4),
-          textColor: Colors.white,
+        SocialSignInButton(
+          text: "Sign in with Google ",
+          textColor: Colors.black,
           onPressed: () {},
+          color: Colors.white,
           borderRadius: 8,
-          minimumHieght: 55,
+          assetPath: 'lib/assets/images/email.png',
+          height: 50,
         ),
         const SizedBox(
           height: 15.0,
         ),
-        const Center(
-          child: Text("Or"),
-        ),
-        const SizedBox(
-          height: 15.0,
-        ),
-        SignInButton(
-          text: "Go Anonymous",
-          color: const Color.fromARGB(255, 152, 65, 65),
-          textColor: Colors.white,
-          onPressed: () {},
-          borderRadius: 8,
-          minimumHieght: 55,
-        ),
-        // CustomElevatedButton(
-        //   child: Image.asset('images/google.svg'),
-        //   onPressed: () {},
-        //   color: Colors.white,
-        //   borderRadius: 20,
-        //   minimumHieght: 20,
-        // )
       ],
     ),
   );
